@@ -1,4 +1,4 @@
-ccflags-y += -I$(src) -Wno-error=implicit-int -Wno-int-conversion
+ccflags-y += -I$(src) -Wno-error=implicit-int -Wno-int-conversion -fcf-protection=branch
 obj-m := ashmem_linux.o
 ashmem_linux-y := deps.o ashmem.o
 
